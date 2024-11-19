@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>investCap Investimentos</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/mainstyle.css" />
+    <style>
+      .img-centered {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 600px;
+        height: auto;
+      }
+
+      .content-margin {
+        margin: 0 10%;
+      }
+
+      .card {
+        margin-bottom: 20px;
+        max-width: 300px;
+        height: 400px; /* Altura fixa para uniformidade */
+        display: flex; /* Flexbox para alinhar o conteúdo */
+        flex-direction: column; /* Alinhar os itens em coluna */
+      }
+
+      .card-img-top {
+        height: 200px; /* Altura da imagem do card */
+        object-fit: cover; /* Cobrir o espaço disponível */
+      }
+
+      .section-title {
+        text-align: center;
+        margin: 50px 0 20px;
+      }
+
+      .section-title hr {
+        width: 50%;
+        margin: 0 auto 10px;
+        border: 1px solid #000;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header style="margin-bottom: 50px">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">InvestCap</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/sobrenós.html">Sobre Nós</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Categorias</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="./pages/bitcoin.html"
+                      >Bitcoin</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item active" href="./pages/juros.html"
+                      >Juros Simples e Compostos</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./pages/investismentos.html"
+                      >Tipos de Investimento</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Procurar
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="content-margin my-5">
+      <h1 class="section-title font-weight-bold">Tipos de Investimentos</h1>
+      <hr />
+      <h3
+        class="text-center"
+        style="font-size: 18px; color: rgba(0, 0, 0, 0.637)"
+      >
+        Publicado dia 08/10/2024 às 13:30 horário de Brasília
+      </h3>
+
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card">
+            <img src="img/cardações.jpg" class="card-img-top" alt="Ações" />
+            <div class="card-body">
+              <h5 class="card-title">Ações</h5>
+              <p class="card-text">
+                Invista em ações de empresas e potencialize seus ganhos.
+              </p>
+              <a href="#" class="btn btn-primary">Confira Agora!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img
+              src="img/cardjuros.webp"
+              class="card-img-top"
+              alt="Juros Simples e Compostos"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Juros Simples e Compostos</h5>
+              <p class="card-text">
+                Segurança e previsibilidade em seus investimentos.
+              </p>
+              <a href="./pages/juros.html" class="btn btn-primary"
+                >Confira Agora!</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="img/cardinvest.jpg" class="card-img-top" alt="Fundos" />
+            <div class="card-body">
+              <h5 class="card-title">Fundos de Investimento</h5>
+              <p class="card-text">
+                Diversificação e gestão profissional dos seus ativos.
+              </p>
+              <a href="./pages/investismentos.html" class="btn btn-primary"
+                >Confira Agora!</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img
+              src="img/carcripto.jpeg"
+              class="card-img-top"
+              alt="Criptomoedas"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Criptomoedas</h5>
+              <p class="card-text">
+                Explore o mundo das criptomoedas e inove seu portfólio.
+              </p>
+              <a href="./pages/bitcoin.html" class="btn btn-primary"
+                >Confira Agora!</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="img/banner.jpg"
+        class="img-centered rounded"
+        alt="header da seção 'Tipos de investimentos'"
+        style="min-width: 1000px; max-width: 1000px"
+      />
+
+      <section class="pequenotext content-margin my-5">
+        <p class="mt-3">
+          O estudo da economia e das finanças é fundamental em um mundo cada vez
+          mais complexo e interconectado. Compreender conceitos financeiros
+          capacita os indivíduos a tomarem decisões informadas sobre
+          investimentos, consumo e poupança.
+        </p>
+        <p>
+          Aprender sobre economia ajuda a entender o funcionamento dos mercados,
+          os fatores que influenciam a oferta e a demanda, e como as políticas
+          econômicas podem afetar o dia a dia. Esse conhecimento é crucial para
+          planejar o futuro financeiro e garantir segurança econômica.
+        </p>
+        <p>
+          O domínio das finanças pessoais permite que os indivíduos gerenciem
+          melhor seus recursos, evitando dívidas desnecessárias e promovendo uma
+          qualidade de vida superior. Investir tempo no estudo de economia e
+          finanças é essencial para alcançar liberdade financeira e realizar
+          sonhos.
+        </p>
+        <p>
+          A educação financeira é um pilar indispensável para qualquer
+          investidor. Compreender conceitos básicos, estar ciente das tendências
+          do mercado e buscar informações em fontes confiáveis são passos
+          fundamentais para tomar decisões mais acertadas. Investir não é apenas
+          sobre ganhar dinheiro; é também sobre construir um futuro financeiro
+          seguro e alinhado com seus desejos.
+        </p>
+        <img
+          src="img/banner2.jpeg"
+          class="img-centered rounded"
+          alt="header da seção 'Tipos de investimentos'"
+          style="min-width: 1000px; max-width: 1000px"
+        />
+        <p>
+          Além disso, é importante estar atualizado sobre as tendências
+          econômicas e financeiras. O mundo está em constante mudança, e a
+          capacidade de adaptação é crucial para o sucesso financeiro.
+          Acompanhar notícias, ler livros e participar de cursos sobre finanças
+          pode expandir significativamente sua perspectiva e habilidades.
+        </p>
+        <p>
+          O networking com outros investidores e profissionais da área pode
+          proporcionar insights valiosos e oportunidades de aprendizado. Não
+          subestime a importância de se cercar de pessoas que compartilham
+          interesses semelhantes e podem oferecer suporte e conhecimento.
+        </p>
+      </section>
+    </section>
+
+    <footer class="text-center footer-body">
+      <div class="container">
+        <div class="row">
+          <div class="footer-content col-lg-4 col-12">
+            <h5>Equipe</h5>
+            <ul>
+              <li><a href="#">Sobre nós</a></li>
+              <li><a href="#">Como funciona</a></li>
+              <li><a href="#">Equipe</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-content col-lg-4 col-12">
+            <h5>Contato</h5>
+            <p>Telefone: +55 (12) 98765-4321</p>
+            <p>E-mail: investcap@gmail.com</p>
+          </div>
+
+          <div class="footer-content col-lg-4 col-12">
+            <h5>Conteúdo</h5>
+            <ul>
+              <li><a href="../pages/bitcoin.html">Bitcoin</a></li>
+              <li><a href="../pages/investismentos.html">Investimentos</a></li>
+              <li><a href="../pages/juros.html">Juros</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

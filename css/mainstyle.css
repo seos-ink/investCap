@@ -1,0 +1,88 @@
+:root {
+  --bgNavbar: rgb(28, 135, 135);
+  --colorNavbar: white;
+  --bgIndex: grey;
+  --margin: 1.5px;
+  --bgBtn: rgba(57, 192, 102, 0.541);
+}
+body img {
+  max-width: 100%;
+  height: auto;
+}
+.navbar {
+  background-color: var(--bgNavbar) !important;
+}
+.titulo {
+  background: var(--bgBtn);
+  font-size: 60px;
+}
+.nav-link {
+  color: var(--colorNavbar) !important;
+}
+.nav-link:hover {
+  /* transform: scale(1.05); */
+  transition: 0.3s;
+  border-bottom: 1.5px solid gold;
+}
+body {
+  margin: 0 auto;
+}
+button {
+  background-color: var(--bgBtn) !important;
+}
+header h1 {
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 80px;
+}
+.imagem {
+  display: flex;
+  justify-content: center;
+}
+footer {
+  background-color: #1c8787;
+  min-height: 150px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+
+}
+.footer-body {
+  color: #fff;
+}
+
+.footer-content ul li {
+  list-style: none;
+}
+.footer-content ul li a {
+  text-decoration: none;
+  margin-right: 30px;
+  color: white;
+}
+
+header {
+  padding-bottom: 12px;
+}
+.offcanvas-body a {
+  color: black;
+}
+.navbar-brand {
+  color: aliceblue;
+}
+.navbar-brand:hover {
+  transition: 1.2s;
+  color: gold;
+}
+.fórmulaJuros {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* .nav-link.active {
+  font-weight: bold;
+  font-size: 18px;
+  border-bottom: 1.5px solid white;
+} */

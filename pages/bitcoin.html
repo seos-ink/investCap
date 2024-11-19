@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>investCap</title>
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/mainstyle.css" />
+    <style>
+      .img-centered {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 600px; /* Ajuste o tamanho máximo conforme necessário */
+        height: auto;
+      }
+
+      .content-margin {
+        margin-left: 250px;
+        margin-right: 250px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header style="margin-bottom: 50px">
+      <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            >investCap - Seu Site de Investimentos</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                investCap - Seu Site de Investimentos
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="bitcoin.html">Criptomoedas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="investismentos.html"
+                    >Investimentos</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="juros.html">Juros</a>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Search
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav> -->
+
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">InvestCap</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sobrenós.html">Sobre Nos</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Categorias
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item active" href="bitcoin.html"
+                      >Bitcoin</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="juros.html"
+                      >Juros Simples e Compostos</a
+                    >
+                  </li>
+
+                  <li>
+                    <a class="dropdown-item" href="investismentos.html"
+                      >Tipos de Investimento</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Procurar
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <style>
+        .dropdown-item.active {
+          font-weight: bold;
+          font-size: 18px;
+        }
+      </style>
+    </header>
+
+    <div style="display: flex; justify-content: center">
+      <div
+        class="card mb-3"
+        style="
+          max-width: 1000px;
+          border-bottom-left-radius: 50px;
+          border-top-left-radius: 50px;
+          min-height: 50vh;
+        "
+      >
+        <div class="row g-0">
+          <div class="imagem col-lg-6 col-md-6 col-12">
+            <img
+              src="../img/Negocios_bitcoin_290719_GettyImages_AdamGault-e1658415656459.webp"
+              style="
+                width: 500px;
+                height: 300px;
+                border-bottom-left-radius: 50px;
+                border-top-left-radius: 50px;
+              "
+              alt=""
+            />
+          </div>
+          <div class="col-lg-6 col-md-6 col-12">
+            <div class="card-body">
+              <h2 class="card-title">O que é Bitcoin?</h2>
+              <p class="card-text">
+                Embora o bitcoin seja a mais comum, há diversas outras moedas digitais em circulação no mercado. Entenda como elas funcionam, para que serve e como funciona.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="pequenotext content-margin my-5">
+      <div class="col-12">
+        <h1 style="font-weight: bold; padding-bottom: 25px">
+          Criptomoedas
+        </h1>
+        <img
+          src="https://picsum.photos/1180/300"
+          alt="stonks"
+          class="img-centered"
+          style="border-radius: 25px"
+        />
+
+        <p style="padding-top: 15px">
+          As criptomoedas, e um tipo de dinheiro, commo outras moedas com as quais convivemos cotidianamente, com a diferença de ser totalmente digital. E tambem ela não é emitida por nenhum governo.
+        </p>
+        <p>
+          As criptomoedas podem ser usadas com as mesmas finalidades do dinheiro fisico. As suas três principais funções ~sao servir como meio de troca, facilitando as transações comerciais; reserva de valor, para preservar o poder de compra no futuro; e ainda como unidade de conta, onde o governo não e capaz de interferir
+        </p>
+
+
+        <p>
+          Há tambem possibilidade de mineração dessas moedas onde precisamos saber que elas sao codigos complexos que nao pode ser alterado. As transações realizadas com elas são extremamente protegidas <br> como não ha uma autoridade central que acompanhe essas transações, elas precisam ser registradas e validadas a algum grupo de pesoas, que usam seus computadores para grava-las no chamado bloxchain. <br> quem registra as transações no bloxchain sçao os chamados mineradores. Eles oferecem a capacidade de procesamento dos seus computadores para realizar esses registros e conferir as operações feitas com as moedas. <br> Para realizar a mineração e preciso de muitos computadores extremamente potente e que eles estejam 100% dedicado a minerar, onde para conseguir minerar pequenas quantidades de bitcoin, os computadores realizam diversos calculos matematicos complexos, que podem inutilizar os computadores
+        </p>
+
+ 
+
+        <p>
+          Está Mineração atualmente e um investimento de alto custo, onde são precisos de maquinas estremamente caras e potentes, e depois de um serto periodo de mineração muita das vezes as peças são condenadas, onde não compensa comprar essas peças mesmo que estejam muito abaixo do valor de mercado, pois na mineração as maquinas são submetidas a ficaram ligadas durante o dia todo, estressando e exigindo o maximo delas sendo até recomendadas estarem em camaras frias, para evitar o superaquecimento.
+        </p>
+
+        <p>
+          Ao decidir que você vai investir em criptomoedas, e uma fonte variavel onde em poucos dias o valor da criptomoeda pode subir muito ou cair, podemos dar exemplos como o Bitcoin que surgiu em 2008 valendo apenas alguns dolares e depois de pouco tempo  depois em 2013 ele estourou custando milhões de dolares
+        </p>
+
+        <figure style="display: flex; justify-content: center">
+          <img
+            src="https://picsum.photos/800/400"
+            alt=""
+            class="img-centered"
+          />
+        </figure>
+
+        <p>
+          Há milhares de criptomoedas disponiveis para o investimento, podendo assim escolher entre diversas criptomoedas um exemplo e a dogecoin que e uma moeda que o Elon Musk investi, e esperar até que ela aumente de valor ou caia
+        </p>
+      
+
+        <p>
+          Podemos concluir que investir em Bitcoin e uma escolha arriscada, porem que possui um =grande valor de retorno caso ele estoure assim como o bitcoin, podendo tyrazer muitos lucros ou prejuizos.
+        </p>
+
+      </div>
+    </section>
+
+    <footer class="text-center">
+      <div class="footer-body row">
+        <div class="footer-content col-lg-4 col-12">
+          <h5>Equipe</h5>
+          <ul>
+            <li><a href="#">Sobre nós</a></li>
+            <li><a href="#">Como funciona</a></li>
+            <li><a href="#">Equipe</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-content col-lg-4 col-12">
+          <h5>Contato</h5>
+          <p>Telefone: +55 (12) 98765-4321</p>
+          <p>E-mail: investcap@gmail.com</p>
+        </div>
+
+        <div class="footer-content col-lg-4 col-12">
+          <h5>Conteúdo</h5>
+          <ul>
+            <li><a href="../pages/bitcoin.html">Bitcoin</a></li>
+            <li><a href="../pages/investimentos.html">Investimentos</a></li>
+            <li><a href="../pages/juros.html">Juros</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

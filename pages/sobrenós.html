@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sobre Nós</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/mainstyle.css" />
+    <style>
+      .card {
+        margin-top: 25px;
+      }
+
+      .card-img {
+        max-height: 300px;
+        object-fit: cover;
+      }
+
+      .titulosobre h2 {
+        border-bottom: 2px solid #093e32;
+        font-weight: 600;
+        padding-bottom: 5px;
+      }
+
+      footer {
+        text-align: center;
+        padding: 10px;
+        background-color: #1c8787;
+        margin: 0 auto;
+      }
+
+      @media (max-width: 992px) {
+        .card-img {
+          max-height: 200px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .titulosobre {
+          margin: 15px;
+        }
+
+        .card-img {
+          max-height: 150px;
+        }
+
+        .navbar-nav a {
+          margin: 0 5px;
+        }
+      }
+
+      @media (max-width: 576px) {
+        .card-img {
+          max-height: 120px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header style="margin-bottom: 50px">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">InvestCap</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/sobrenós.html">Sobre Nós</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Categorias</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="../pages/bitcoin.html"
+                      >Bitcoin</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item active" href="../pages/juros.html"
+                      >Juros Simples e Compostos</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../pages/investismentos.html"
+                      >Tipos de Investimento</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Procurar
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="titulosobre container mt-5">
+      <h2>Conheça nossa equipe</h2>
+    </div>
+
+    <main class="container mt-5">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="card">
+            <figure>
+              <img
+                src="../img/saulo.png"
+                alt="Saulo Elias de Oliveira Santos"
+                class="card-img"
+              />
+            </figure>
+            <div class="m-3">
+              <h2 class="h5">Saulo Santos</h2>
+              <p>Responsavel pela Administração do Grupo e Programação</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="card">
+            <figure>
+              <img
+                src="..."
+                alt="Thales"
+                class="card-img"
+              />
+            </figure>
+            <div class="m-3">
+              <h2 class="h5">Thales Vieira</h2>
+              <p>Responsavel pela Programação e Estilização</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="card">
+            <figure>
+              <img
+                src="../img/nicolas custo.png"
+                alt="Nicolas Custódio de Campos"
+                class="card-img"
+              />
+            </figure>
+            <div class="m-3">
+              <h2 class="h5">Nicolas Custódio</h2>
+              <p>Responsavel pela Programação e Estilização</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="card">
+            <figure>
+              <img
+                src="../img/luiz_miguel.jpg"
+                alt="Yan"
+                class="card-img"
+              />
+            </figure>
+            <div class="m-3">
+              <h2 class="h5">Yan</h2>
+              <p>Responsavel pela Programação e Estilização</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="text-center footer-body">
+      <div class="container">
+        <div class="row">
+          <div class="footer-content col-lg-4 col-12">
+            <h5>Equipe</h5>
+            <ul>
+              <li><a href="./sobrenós.html">Sobre nós</a></li>
+              <li><a href="#">Como funciona</a></li>
+              <li><a href="#">Equipe</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-content col-lg-4 col-12">
+            <h5>Contato</h5>
+            <p>Telefone: +55 (12) 98765-4321</p>
+            <p>E-mail: investcap@gmail.com</p>
+          </div>
+
+          <div class="footer-content col-lg-4 col-12">
+            <h5>Conteúdo</h5>
+            <ul>
+              <li><a href="../pages/bitcoin.html">Bitcoin</a></li>
+              <li><a href="../pages/investismentos.html">Investimentos</a></li>
+              <li><a href="../pages/juros.html">Juros</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
